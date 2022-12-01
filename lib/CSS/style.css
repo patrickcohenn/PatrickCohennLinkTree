@@ -7,9 +7,7 @@
 
 body{
     display: flex;
-    width: 300px;
-    height: 800px;
-    background-color: red;
+    width: 100%;
 }
 
 .background{
@@ -31,7 +29,6 @@ body{
 }
 .no-link{
     text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
 .perfil{
@@ -51,10 +48,10 @@ body{
 .ft-perfil{
     position: absolute;
     top: 2vh;
-    left: 35vw;
+    left: 15vh;
     width: 40vw;
     height: 40vw;
-    border: 5px solid rgb(6, 84, 173);
+    border: 5px solid #0257f5;
     border-radius: 50%;
 }
 
@@ -78,7 +75,7 @@ body{
     border-radius: 50px;
     padding: 15px;
     background: #283048;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #00bbff, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #02389c, #283048);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #026488, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -94,6 +91,7 @@ body{
     padding: 10px;
     margin: 10px;
     padding: 5px;
+    text-shadow: 2px 2px #070707;
 }
 
 .icon-link:hover{
