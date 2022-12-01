@@ -6,7 +6,10 @@
 }
 
 body{
-    width: 95vw;
+    display: flex;
+    width: 300px;
+    height: 800px;
+    background-color: red;
 }
 
 .background{
@@ -32,7 +35,7 @@ body{
 }
 
 .perfil{
-    height: 30vh;
+    height: 15rem;
 }
 
 .perfil h1{
@@ -55,8 +58,6 @@ body{
     border-radius: 50%;
 }
 
-
-
 .text-link{
     position: relative;
 }
@@ -73,7 +74,7 @@ body{
 }
 
 .square button{
-    width: 95vw;
+    width: 90vw;
     border-radius: 50px;
     padding: 15px;
     background: #283048;  /* fallback for old browsers */
