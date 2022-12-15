@@ -312,7 +312,94 @@ body {
     }
 }
 
-@media screen and (min-width: 530px) and (max-width: 550px) {
+@media screen and (min-width: 421px) and (max-width: 439px) {
+    *{
+        font-size: 1rem;
+    }
+
+    .perfil h1{
+        padding-top: 6px;
+        font-size: 1.8rem;
+    }
+
+    .message {
+        height: 15vw;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .message-right{
+        right: -38vw;
+    }
+    
+    .message-left{
+        left: 2vw;
+    }
+    
+    footer, strong{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 460px) {
+    *{
+        font-size: 1.1rem;
+    }
+
+    .perfil h1{
+        padding-top: 6px;
+        font-size: 1.6rem;
+    }
+
+    .message {
+        height: 14vw;
+        font-weight: 500;
+    }
+    
+    .message-right{
+        right: -38vw;
+    }
+    
+    .message-left{
+        left: 2vw;
+    }
+    
+    footer, strong{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 461px) and (max-width: 529px) {
+    *{
+        font-size: 1rem;
+    }
+
+    .perfil h1{
+        padding-top: 6px;
+        font-size: 1.6rem;
+    }
+
+    .message {
+        height: 12vw;
+        font-weight: 500;
+    }
+    
+    .message-right{
+        right: -38vw;
+    }
+    
+    .message-left{
+        left: 2vw;
+    }
+    
+    footer, strong{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 530px) and (max-width: 759px) {
     *{
         font-size: 1rem;
     }
@@ -347,7 +434,7 @@ body {
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 780px){
+@media screen and (min-width: 760px) and (max-width: 809px){
     *{
         font-size: 1.3rem;
     }
