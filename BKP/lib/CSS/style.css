@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.background{
+    height: 100%;
+    background: linear-gradient(90deg, #063d52, #032546);
+    background-size: 400% 400%;
+    animation: anim 5s infinite ease-in-out;
+}
+
+@keyframes anim{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.no-link{
+    text-decoration: none;
+}
+
+.perfil{
+    height: 31vh;
+    width: 90vw;
+}
+
+.perfil h1{
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
+    padding: 5vw;
+    top: 22vh;
+    left: 10vh;
+    margin-bottom: 5px;
+    text-shadow: 2px;
+}
+
+.ft-perfil{
+    position: absolute;
+    top: 2vh;
+    left: 15vh;
+    width: 40vw;
+    height: 40vw;
+    border: 5px solid #0257f5;
+    border-radius: 50%;
+}
+
+.text-link{
+    position: relative;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+.square .icon-button:hover {
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #02389c;
+    transform: scale(1);
+}
+
+.square .icon-button{
+    width: 90vw;
+    border-radius: 50px;
+    padding: 15px;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #02389c, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #026488, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.group-btn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.icon{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+    text-shadow: 2px 2px #005C97;
+}
+
+.icon-button .icon-link:hover{
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon-button .icon-linkedin:hover{
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon-button .icon-face:hover{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon-button .icon-isnt:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.icon-button .icon-twitter:hover{
+    background: rgb(7,23,230);
+    background: linear-gradient(90deg, rgba(7,23,230,1) 0%, rgba(11,63,214,1) 12%, rgba(0,212,255,1) 100%);
+}
+
+.icon-button .icon-git:hover{
+    background: rgb(128,0,128);
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(153,51,153,1) 50%, rgba(153,50,204,1) 100%);
+}
+
+.message-right{
+    right: -2vw;
+    background-color: #00c6ff;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border-bottom-right-radius: 0;
+    position: relative;
+}
+
+.message-right::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    right: 0;
+    top: 98%;
+    width: 20px;
+    height: 10px;
+    clip-path:polygon(0 0, 100% 0, 100% 100%);
+}
+
+.message-right button, .message-left button{
+    width: 80vw;
+    border: 0;
+    border-radius: 50px;
+    background-color: inherit;
+    height: auto;
+}
+
+.message-left{
+    left: 1vw;
+    background-color: #05426b;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border-bottom-left-radius: 0;
+    position: relative;
+}
+
+.message-left::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    left: 0;
+    top: 98%;
+    width: 20px;
+    height: 15px;
+    clip-path:polygon( 0% 0%, 100% 0%, 0 100%);
+}
+
+.copyright{
+    margin: 5% 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
