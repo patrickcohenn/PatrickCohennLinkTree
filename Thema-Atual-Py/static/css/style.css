@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.background{
+    background: linear-gradient(90deg,black, #011126, #011C40,  #032859, #074973,#08678C, #0774a0);
+    background-size: 100% 100vw;
+    animation: anim 5s infinite ease-in-out;
+}
+
+@keyframes anim{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.no-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.no-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+.perfil{
+    height: 30vh;
+}
+
+.perfil h1{
+    position: relative;
+    text-align: center;
+    left: 2vw;
+    padding: 5vw;
+    top: 22vh;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px black;
+}
+
+.ft-perfil{
+    position: absolute;
+    top: 2vh;
+    left: 35vw;
+    width: 40vw;
+    height: 40vw;
+    border: 5px solid rgb(6, 84, 173);
+    border-radius: 50%;
+}
+
+.text-link{
+    position: relative;
+}
+
+.square{
+    height: 99vh;
+}
+
+.square button:hover {
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #02389c;
+    transform: scale(1);
+}
+
+.square button{
+    border-radius: 50px;
+    padding: 20px;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00bbff, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #026488, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.group-btn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.icon{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.icon-link,
+.icon-linkedin,
+.icon-face,
+.icon-isnt,
+.icon-twitter,
+.icon-git{
+    box-shadow:  2px 2px 6px 2px #000000; /*box-shadow: [inset][h-offset][v-offset][blur][spread][color];*/
+}
+
+.icon-link:hover,
+.icon-linkedin:hover,
+.icon-face:hover,
+.icon-isnt:hover,
+.icon-twitter:hover,
+.icon-git:hover{
+    box-shadow: inset 2px 2px 20px 2px #070707; /*box-shadow: [inset][h-offset][v-offset][blur][spread][color];*/
+}
+
+.icon-link:hover{
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icon-linkedin:hover{
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.icon-face:hover{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.icon-isnt:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.icon-twitter:hover{
+    background: rgb(7,23,230);
+    background: linear-gradient(90deg, rgba(7,23,230,1) 0%, rgba(11,63,214,1) 12%, rgba(0,212,255,1) 100%);
+}
+
+.icon-git:hover{
+    background: rgb(128,0,128);
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(153,51,153,1) 50%, rgba(153,50,204,1) 100%);
+}
+
+@media screen and (max-width:400px) {
+    .perfil{
+        height: 25vh;
+    }
+    .ft-perfil{
+        position: absolute;
+        padding: 0;
+        left: 35vw;
+        top: 2vh;
+        width: 20vh;
+        height: 20vh;
+        border: 5px solid rgb(6, 84, 173);
+        border-radius: 50%;
+    }
+
+    .perfil h1{
+        position: relative;
+        text-align: center;
+        top: 17vh;
+        margin-bottom: 5px;
+    }
+    .square{
+        padding-top: 5vh;
+    }
+    .square button{
+        border-radius: 50px;
+        padding: 10px;
+        padding-top: 2vh;
+        background: #283048;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #00bbff, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #026488, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    /*@media screen and (min-height:900px) {
+        .ft-perfil{
+            
+        }
+    }*/
+
+}
