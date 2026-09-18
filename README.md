@@ -4,15 +4,14 @@ Página pessoal de links ("link na bio") do Patrick Cohenn.
 
 ## Estrutura do projeto
 
-- **`index.html`** — versão em produção: site estático (HTML + CSS puro, Bootstrap via CDN). É a página publicada hoje (deploy via Netlify). Usa os arquivos em `static/`.
-- **`novo-index.html`** — redesign minimalista em arquivo único autocontido (CSS embutido, fonte Inter via Google Fonts, sem outras dependências). Reaproveita as imagens de `static/img/`. Candidato a substituir o `index.html`, ainda não promovido.
-- **`static/`** — CSS e imagens usados pelo `index.html` e pelo `novo-index.html`.
+- **`index.html`** — versão em produção: site estático, arquivo único autocontido (CSS embutido, fonte Inter via Google Fonts, sem outras dependências). É a página publicada hoje (deploy via Netlify). Usa as imagens em `static/img/`.
+- **`static/`** — imagens (e CSS legado) usados pelo `index.html`.
 - **`Thema-Atual-Py/`** — a mesma página servida via Flask (`app.py`), para hospedagem em provedores estilo Heroku/Render (usa `gunicorn`, ver `Procfile` e `requirements.txt` dentro da pasta). Independente do restante do repositório — tem seu próprio `static/`.
 
 ## Rodando localmente
 
 **Site estático (raiz):**
-Abra `index.html` ou `novo-index.html` diretamente no navegador — sem build nem dependências.
+Abra `index.html` diretamente no navegador — sem build nem dependências.
 
 **Versão Flask (`Thema-Atual-Py/`):**
 ```bash

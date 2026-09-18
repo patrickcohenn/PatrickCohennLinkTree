@@ -1,36 +1,401 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
-    <!-- CSS only Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="icon" type="image/png" href="../static/img/asset-15.png">
-    <title>Links Patrick Cohenn</title>
-</head>
-<body class="background">
-    <div class="square">
-        <div class="perfil ">
-            <img  class="ft-perfil perfil"src="../static/img/perfil.png" alt="Foto do Pqtrick Cohenn">
-            <h1>Patrick Cohenn</h1>
-        </div>
-        <div class="container bs-color" >
-            <div class="d-grid gap-2 group-btn text-link">
-                <button class="icon-link"><a class="no-link" href="https://xnerd.com.br/" target="_blank" ><i class="icon bi bi-link-45deg"></i>X-Nerd Brasil</a></button>
-                <button class="icon-link"><a class="no-link" href="https://portfolio-patrick-coehnn.onrender.com" target="_blank" ><i class="icon bi bi-link-45deg"></i>Portfólio</a></button>
-                <button class="icon-linkedin"><a class="no-link " href="https://br.linkedin.com/in/patrickcohenn" target="_blank" ><i class="icon bi bi-linkedin"></i>linkedin</a></button>
-                <button class="icon-face"><a class="no-link" href="https://www.facebook.com/patrickcohenn/"target="_blank" ><i class="icon bi bi-facebook"></i>Facebook</a></button>
-                <button class="icon-isnt"><a class="no-link" href="https://www.instagram.com/patrickcohenn/" target="_blank" ><i class="icon bi bi-instagram"></i>Instagram</a></button>
-                <button class="icon-twitter"><a class="no-link" href="https://twitter.com/patrickcohenn" target="_blank" ><i class="icon bi bi-twitter"></i>Twitter</a></button>
-                <button class="icon-git"><a class="no-link" href="https://github.com/patrickcohenn" target="_blank" ><i class="icon bi bi-github"></i></i>Github</a></button>
-            </div>
-        </div>
-    </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0d0d0d">
+<meta name="description" content="Links de Patrick Cohenn: portfólio, X-Nerd Brasil e redes sociais.">
+<title>Patrick Cohenn — Links</title>
+<link rel="icon" type="image/png" href="./static/img/asset-15.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --text: #ffffff;
+    --text-secondary: #8c8c8c;
+    --surface: #1a1a1a;
+    --border: rgba(255, 255, 255, 0.1);
+  }
 
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 480px;
+    padding: 56px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* Header */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--border);
+  }
+
+  .profile h1 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 16px 0 0;
+  }
+
+  .bio {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin: 6px 0 0;
+    padding: 0 8px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+  }
+
+  .socials a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .socials svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Link list */
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 2px;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+  }
+
+  .links a.link-block:hover .link-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .link-block:last-child {
+    border-bottom: none;
+  }
+
+  .link-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-title {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.9375rem;
+  }
+
+  .link-desc {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    margin-top: 4px;
+  }
+
+  .link-block .arrow {
+    flex-shrink: 0;
+    width: 17px;
+    height: 17px;
+    color: var(--text-secondary);
+    margin-top: 3px;
+    transition: transform 0.15s ease, color 0.15s ease;
+  }
+
+  .link-block:hover .arrow {
+    color: var(--text);
+    transform: translate(2px, -2px);
+  }
+
+  .link-block.is-soon {
+    opacity: 0.5;
+  }
+
+  .soon-badge {
+    flex-shrink: 0;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  /* Newsletter */
+  .newsletter form {
+    display: flex;
+    gap: 8px;
+  }
+
+  .newsletter input {
+    flex: 1;
+    min-width: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 0.9375rem;
+  }
+
+  .newsletter input::placeholder {
+    color: var(--text-secondary);
+  }
+
+  .newsletter button {
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s ease;
+  }
+
+  .newsletter button:hover {
+    opacity: 0.85;
+  }
+
+  .newsletter button:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  .newsletter-status {
+    min-height: 1.2em;
+    margin: 8px 0 0;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 360px) {
+    .newsletter form {
+      flex-direction: column;
+    }
+  }
+
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="profile">
+      <img class="avatar" src="./static/img/perfil.png" alt="Foto de perfil de Patrick Cohenn" width="96" height="96">
+      <h1>Patrick Cohenn</h1>
+      <p class="bio">Desenvolvedor de software. Criador do X-Nerd Brasil.</p>
+
+      <nav class="socials" aria-label="Redes sociais">
+        <a href="https://twitter.com/patrickcohenn" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) de Patrick Cohenn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19"/>
+          </svg>
+        </a>
+        <a href="https://br.linkedin.com/in/patrickcohenn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Patrick Cohenn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="4"/>
+            <circle cx="7.5" cy="7.2" r="0.9" fill="currentColor" stroke="none"/>
+            <line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/>
+            <path d="M11.3 16.5v-3.6c0-1.3.9-2.4 2.3-2.4s2.2 1 2.2 2.4v3.6"/>
+            <line x1="11.3" y1="10.5" x2="11.3" y2="16.5"/>
+          </svg>
+        </a>
+        <a href="https://github.com/patrickcohenn" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Patrick Cohenn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 7 4 12 9 17"/>
+            <polyline points="15 7 20 12 15 17"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/patrickcohenn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Patrick Cohenn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+            <circle cx="12" cy="12" r="4.2"/>
+            <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/patrickcohenn/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Patrick Cohenn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M14 8.5h-1.5c-.8 0-1.5.7-1.5 1.5v2h3l-.4 2.5H11V21"/>
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <section class="links" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="sr-only">Links</h2>
+
+      <a class="link-block" href="https://portfolio-patrick-coehnn.onrender.com" target="_blank" rel="noopener noreferrer">
+        <span class="link-text">
+          <span class="link-title">Portfólio</span>
+          <span class="link-desc">Todos os meus projetos e trabalhos mais recentes.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7"/>
+          <path d="M8 7h9v9"/>
+        </svg>
+      </a>
+
+      <a class="link-block" href="https://xnerd.com.br/" target="_blank" rel="noopener noreferrer">
+        <span class="link-text">
+          <span class="link-title">X-Nerd Brasil</span>
+          <span class="link-desc">O portal de notícias nerd que eu criei.</span>
+        </span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7"/>
+          <path d="M8 7h9v9"/>
+        </svg>
+      </a>
+
+      <div class="link-block is-soon" aria-disabled="true">
+        <span class="link-text">
+          <span class="link-title">Em breve</span>
+          <span class="link-desc">Novo projeto a caminho.</span>
+        </span>
+        <span class="soon-badge">em breve</span>
+      </div>
+
+      <div class="link-block is-soon" aria-disabled="true">
+        <span class="link-text">
+          <span class="link-title">Em breve</span>
+          <span class="link-desc">Mais conteúdo chegando por aqui.</span>
+        </span>
+        <span class="soon-badge">em breve</span>
+      </div>
+
+      <div class="link-block is-soon" aria-disabled="true">
+        <span class="link-text">
+          <span class="link-title">Em breve</span>
+          <span class="link-desc">Novidade em produção.</span>
+        </span>
+        <span class="soon-badge">em breve</span>
+      </div>
+
+      <div class="link-block is-soon" aria-disabled="true">
+        <span class="link-text">
+          <span class="link-title">Em breve</span>
+          <span class="link-desc">Fique de olho, vem coisa nova.</span>
+        </span>
+        <span class="soon-badge">em breve</span>
+      </div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading" class="sr-only">Newsletter</h2>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="sr-only">E-mail para receber a newsletter</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Inscreva-se na newsletter" autocomplete="email" required>
+        <button type="submit">Inscrever</button>
+      </form>
+      <p id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 Patrick Cohenn</p>
+    </footer>
+  </main>
+
+  <script>
+    var form = document.getElementById('newsletter-form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var button = form.querySelector('button');
+      var status = document.getElementById('newsletter-status');
+      button.disabled = true;
+      status.textContent = 'Inscrito! Obrigado por acompanhar.';
+      setTimeout(function () {
+        form.reset();
+        button.disabled = false;
+        status.textContent = '';
+      }, 3000);
+    });
+  </script>
 </body>
 </html>
